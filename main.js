@@ -5,6 +5,9 @@
 
 'use strict';
 
+/* Mark HTML element so CSS animations activate */
+document.documentElement.classList.add('js-loaded');
+
 /* ─── Utility ────────────────────────────────── */
 const $ = (sel, ctx = document) => ctx.querySelector(sel);
 const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
@@ -15,9 +18,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   if (!nav) return;
 
   window.addEventListener('scroll', () => {
-    nav.style.boxShadow = window.scrollY > 10
-      ? '0 4px 32px rgba(0,0,0,0.4)'
-      : 'none';
+    nav.classList.toggle('nav-scrolled', window.scrollY > 10);
   }, { passive: true });
 
   // Mark active nav link based on current page
@@ -81,9 +82,23 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
         io.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.04, rootMargin: '0px 0px 0px 0px' });
 
-  els.forEach(el => io.observe(el));
+  // Immediately reveal elements already visible on load
+  els.forEach(el => {
+    const r = el.getBoundingClientRect();
+    if (r.top < window.innerHeight + 100) {
+      el.classList.add('revealed');
+    } else {
+      io.observe(el);
+    }
+  });
+
+  // Nuclear fallback: force-reveal everything after 1.5s
+  // Ensures no content ever stays invisible due to IO failures
+  setTimeout(() => {
+    els.forEach(el => el.classList.add('revealed'));
+  }, 1500);
 })();
 
 /* ─── Stat counter animation ─────────────────── */
