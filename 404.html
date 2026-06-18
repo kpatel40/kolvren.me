@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page Not Found — Kolvren</title>
   <meta name="description" content="Page not found — Kolvren Microsoft Copilot Adoption Partner." />
+  <link rel="canonical" href="https://kolvren.me/404.html" />
   <meta name="robots" content="noindex, follow" />
   <!-- Open Graph -->
   <meta property="og:title" content="Page Not Found — Kolvren" />
   <meta property="og:description" content="Page not found — Kolvren Microsoft Copilot Adoption Partner." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.kolvren.com/404.html" />
-  <meta property="og:image" content="https://www.kolvren.com/assets/img/og-image.jpg" />
+  <meta property="og:url" content="https://kolvren.me/404.html" />
+  <meta property="og:image" content="https://kolvren.me/assets/img/og-image.jpg" />
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,101 +41,59 @@
       },
     };
   </script>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="bg-dark font-body text-cream antialiased">
 
-<nav data-id="2" id="main-nav" class="fixed top-0 left-0 right-0 h-[68px] bg-dark z-[1000] border-b border-[rgba(255,255,255,0.08)]">
-    <div data-id="3" class="max-w-[1180px] mx-auto px-6 h-full flex items-center justify-between">
-      <div data-id="4" id="nav-logo" class="font-display font-[800] text-[1.5rem] tracking-wide cursor-pointer select-none" href="index.html">
-        <span data-id="5" class="text-accent">/</span> <span data-id="6" class="text-cream">Kolvren</span>
-      </div>
-      <ul data-id="7" id="nav-links" class="hidden md:flex items-center gap-10 list-none">
-        <li data-id="8"><a data-id="9" class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer active" href="index.html">Home</a></li>
-        <li data-id="10"><a data-id="11" class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer" href="services.html">Services</a></li>
-        <li data-id="12"><a data-id="13" class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer" href="about.html">About</a></li>
-        <li data-id="14"><a data-id="15" class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer" href="contact.html">Contact</a></li>
+<nav id="main-nav" class="fixed top-0 left-0 right-0 h-[68px] bg-dark z-[1000] border-b border-[rgba(255,255,255,0.08)]">
+    <div class="max-w-[1180px] mx-auto px-6 h-full flex items-center justify-between">
+      <a id="nav-logo" class="font-display font-[800] text-[1.5rem] tracking-wide cursor-pointer select-none" href="index.html">
+        <span class="text-accent">/</span> <span class="text-cream">Kolvren</span>
+      </a>
+      <ul id="nav-links" class="hidden md:flex items-center gap-10 list-none">
+        <li><a class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer" href="index.html">Home</a></li>
+        <li><a class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer" href="services.html">Services</a></li>
+        <li><a class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer" href="about.html">About</a></li>
+        <li><a class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer" href="contact.html">Contact</a></li>
       </ul>
-      <a data-id="16" class="hidden md:inline-flex items-center bg-cream text-dark font-display font-bold text-[0.85rem] uppercase tracking-[0.05em] rounded-full px-7 py-3 cursor-pointer btn-hover transition-all" href="contact.html">Book an Audit</a>
-      <button data-id="17" id="nav-toggle" class="md:hidden flex flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1" aria-label="Toggle menu">
-        <span data-id="18" class="block w-6 h-[2px] bg-cream rounded transition-all"></span>
-        <span data-id="19" class="block w-6 h-[2px] bg-cream rounded transition-all"></span>
-        <span data-id="20" class="block w-6 h-[2px] bg-cream rounded transition-all"></span>
+      <a class="hidden md:inline-flex items-center bg-cream text-dark font-display font-bold text-[0.85rem] uppercase tracking-[0.05em] rounded-full px-7 py-3 cursor-pointer btn-hover transition-all" href="contact.html">Book an Audit</a>
+      <button id="nav-toggle" class="nav__toggle" class="md:hidden flex flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1" aria-label="Toggle menu">
+        <span class="block w-6 h-[2px] bg-cream rounded transition-all"></span>
+        <span class="block w-6 h-[2px] bg-cream rounded transition-all"></span>
+        <span class="block w-6 h-[2px] bg-cream rounded transition-all"></span>
       </button>
     </div>
   </nav>
+<div class="nav__mobile" id="nav-mobile" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn--cream btn--sm" style="margin-top:8px;">Book an Audit</a>
+</div>
 
 <main>
-<div data-id="857" class="bg-dark min-h-[80vh] flex items-center justify-center text-center px-6 pt-[68px] relative overflow-hidden">
-      <div data-id="858" class="absolute inset-0 flex items-center justify-center font-display font-[900] text-[40vw] text-[rgba(255,255,255,0.03)] select-none pointer-events-none leading-none">/</div>
-      <div data-id="859" class="relative z-[1]">
-        <div data-id="860" class="font-display font-[900] text-[rgba(255,255,255,0.05)] leading-none mb-4" style="font-size:clamp(6rem,20vw,12rem);">404</div>
-        <h1 data-id="861" class="font-display font-[800] text-cream uppercase text-[2rem] mb-4">This Page Doesn't Exist.</h1>
-        <p data-id="862" class="text-warm-grey font-body text-[1.05rem] mb-10 max-w-md mx-auto">But your Copilot ROI opportunity does.</p>
-        <div data-id="863" class="flex gap-4 justify-center flex-wrap mb-8">
-          <a data-id="864" class="inline-flex items-center bg-cream text-dark font-display font-bold text-[0.9rem] uppercase tracking-[0.05em] rounded-full px-8 py-4 cursor-pointer btn-hover transition-all" href="contact.html">Book a Free Audit →</a>
-          <a data-id="865" class="inline-flex items-center border-[1.5px] border-cream text-cream font-display font-bold text-[0.9rem] uppercase tracking-[0.05em] rounded-full px-8 py-4 cursor-pointer btn-hover transition-all bg-transparent" href="index.html">Go Home</a>
+<div class="bg-dark min-h-[80vh] flex items-center justify-center text-center px-6 pt-[68px] relative overflow-hidden">
+      <div class="absolute inset-0 flex items-center justify-center font-display font-[900] text-[40vw] text-[rgba(255,255,255,0.03)] select-none pointer-events-none leading-none">/</div>
+      <div class="relative z-[1]">
+        <div class="font-display font-[900] text-[rgba(255,255,255,0.05)] leading-none mb-4" style="font-size:clamp(6rem,20vw,12rem);">404</div>
+        <h1 class="font-display font-[800] text-cream uppercase text-[2rem] mb-4">This Page Doesn't Exist.</h1>
+        <p class="text-warm-grey font-body text-[1.05rem] mb-10 max-w-md mx-auto">But your Copilot ROI opportunity does.</p>
+        <div class="flex gap-4 justify-center flex-wrap mb-8">
+          <a class="inline-flex items-center bg-cream text-dark font-display font-bold text-[0.9rem] uppercase tracking-[0.05em] rounded-full px-8 py-4 cursor-pointer btn-hover transition-all" href="contact.html">Book a Free Audit →</a>
+          <a class="inline-flex items-center border-[1.5px] border-cream text-cream font-display font-bold text-[0.9rem] uppercase tracking-[0.05em] rounded-full px-8 py-4 cursor-pointer btn-hover transition-all bg-transparent" href="index.html">Go Home</a>
         </div>
       </div>
     </div>
-    <footer data-id="866" class="bg-dark pb-6">
-      <div data-id="867" class="max-w-[1180px] mx-auto px-6">
-        <div data-id="868" class="border-t border-[rgba(255,255,255,0.08)] py-6 flex items-center justify-between flex-wrap gap-4">
-          <p data-id="869" class="text-warm-grey-light font-body text-[0.78rem]">© 2026 Kolvren LLC. All rights reserved. Made by Copilot</p>
-          <div data-id="870" class="flex gap-4"><a data-id="871" href="#" class="text-warm-grey font-body text-[0.82rem] hover:text-cream transition-colors">LinkedIn</a><a data-id="872" href="#" class="text-warm-grey font-body text-[0.82rem] hover:text-cream transition-colors">Privacy Policy</a></div>
+    <footer class="bg-dark pb-6">
+      <div class="max-w-[1180px] mx-auto px-6">
+        <div class="border-t border-[rgba(255,255,255,0.08)] py-6 flex items-center justify-between flex-wrap gap-4">
+          <p class="text-warm-grey-light font-body text-[0.78rem]">© 2026 Kolvren LLC. All rights reserved</p>
+          <div class="flex gap-4"><a href="https://www.linkedin.com/company/kolvren" class="text-warm-grey font-body text-[0.82rem] hover:text-cream transition-colors">LinkedIn</a><a href="mailto:ceo@anchorforhotels.com?subject=Privacy%20Policy%20Request" class="text-warm-grey font-body text-[0.82rem] hover:text-cream transition-colors">Privacy Policy</a></div>
         </div>
       </div>
     </footer>
 </main>
-
-<footer data-id="246" class="bg-dark pt-20 pb-0 relative overflow-hidden">
-      <div data-id="247" class="footer-watermark font-display font-[900] text-[8vw] text-[rgba(255,255,255,0.04)] uppercase leading-none text-center select-none pointer-events-none mb-12">Kolvren</div>
-      <div data-id="248" class="max-w-[1180px] mx-auto px-6">
-        <div data-id="249" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          <div data-id="250">
-            <div data-id="251" class="font-display font-[800] text-[1.4rem] mb-4"><span data-id="252" class="text-accent">/</span> <span data-id="253" class="text-cream">Kolvren</span></div>
-            <p data-id="254" class="text-warm-grey font-body text-[0.88rem] leading-relaxed mb-3">Microsoft Copilot adoption partner for mid-market organisations.</p>
-            <p data-id="255" class="text-warm-grey font-body text-[0.88rem]">ceo@anchorforhotels.com</p>
-            <p data-id="256" class="text-warm-grey font-body text-[0.88rem]">+1 (706) 350-3883</p>
-          </div>
-          <div data-id="257">
-            <h5 data-id="258" class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.14em] mb-5">Services</h5>
-            <ul data-id="259" class="space-y-3 list-none">
-              <li data-id="260"><a data-id="261" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Copilot ROI Audit</a></li>
-              <li data-id="262"><a data-id="263" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Workflow Implementation</a></li>
-              <li data-id="264"><a data-id="265" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Enablement &amp; Training</a></li>
-              <li data-id="266"><a data-id="267" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Adoption Analytics</a></li>
-              <li data-id="268"><a data-id="269" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Change Management</a></li>
-              <li data-id="270"><a data-id="271" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Governance &amp; Compliance</a></li>
-            </ul>
-          </div>
-          <div data-id="272">
-            <h5 data-id="273" class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.14em] mb-5">Company</h5>
-            <ul data-id="274" class="space-y-3 list-none">
-              <li data-id="275"><a data-id="276" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="about.html">About</a></li>
-              <li data-id="277"><a data-id="278" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="about.html">Our Approach</a></li>
-              <li data-id="279"><a data-id="280" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="contact.html">Contact</a></li>
-              <li data-id="281"><a data-id="282" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="contact.html">Book an Audit</a></li>
-            </ul>
-          </div>
-          <div data-id="283">
-            <h5 data-id="284" class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.14em] mb-5">Certifications</h5>
-            <ul data-id="285" class="space-y-3 list-none">
-              <li data-id="286"><span data-id="287" class="text-warm-grey font-body text-[0.9rem]">Microsoft Solutions Partner</span></li>
-              <li data-id="288"><span data-id="289" class="text-warm-grey font-body text-[0.9rem]">M365 Certified</span></li>
-            </ul>
-          </div>
-        </div>
-        <div data-id="290" class="border-t border-[rgba(255,255,255,0.08)] py-6 flex items-center justify-between flex-wrap gap-4">
-          <p data-id="291" class="text-warm-grey-light font-body text-[0.78rem]">© 2026 Kolvren LLC. All rights reserved. Made by Copilot</p>
-          <div data-id="292" class="flex gap-4">
-            <a data-id="293" href="#" class="text-warm-grey font-body text-[0.82rem] hover:text-cream transition-colors">LinkedIn</a>
-            <a data-id="294" href="#" class="text-warm-grey font-body text-[0.82rem] hover:text-cream transition-colors">Privacy Policy</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-  <script src="assets/js/main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

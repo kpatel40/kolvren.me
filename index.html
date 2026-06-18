@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kolvren — Microsoft Copilot Adoption Partner</title>
   <meta name="description" content="Kolvren helps mid-market organisations achieve 80%+ Microsoft Copilot adoption and measurable ROI within 12 weeks." />
+  <link rel="canonical" href="https://kolvren.me/" />
   <meta name="robots" content="index, follow" />
   <!-- Open Graph -->
   <meta property="og:title" content="Kolvren — Microsoft Copilot Adoption Partner" />
   <meta property="og:description" content="Kolvren helps mid-market organisations achieve 80%+ Microsoft Copilot adoption and measurable ROI within 12 weeks." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.kolvren.com/" />
-  <meta property="og:image" content="https://www.kolvren.com/assets/img/og-image.jpg" />
+  <meta property="og:url" content="https://kolvren.me/" />
+  <meta property="og:image" content="https://kolvren.me/assets/img/og-image.jpg" />
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,57 +41,64 @@
       },
     };
   </script>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="bg-dark font-body text-cream antialiased">
 
-<nav data-id="2" id="main-nav" class="fixed top-0 left-0 right-0 h-[68px] bg-dark z-[1000] border-b border-[rgba(255,255,255,0.08)]">
-    <div data-id="3" class="max-w-[1180px] mx-auto px-6 h-full flex items-center justify-between">
-      <div data-id="4" id="nav-logo" class="font-display font-[800] text-[1.5rem] tracking-wide cursor-pointer select-none" href="index.html">
-        <span data-id="5" class="text-accent">/</span> <span data-id="6" class="text-cream">Kolvren</span>
-      </div>
-      <ul data-id="7" id="nav-links" class="hidden md:flex items-center gap-10 list-none">
-        <li data-id="8"><a data-id="9" class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer active" href="index.html">Home</a></li>
-        <li data-id="10"><a data-id="11" class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer" href="services.html">Services</a></li>
-        <li data-id="12"><a data-id="13" class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer" href="about.html">About</a></li>
-        <li data-id="14"><a data-id="15" class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer" href="contact.html">Contact</a></li>
+<nav id="main-nav" class="fixed top-0 left-0 right-0 h-[68px] bg-dark z-[1000] border-b border-[rgba(255,255,255,0.08)]">
+    <div class="max-w-[1180px] mx-auto px-6 h-full flex items-center justify-between">
+      <a id="nav-logo" class="font-display font-[800] text-[1.5rem] tracking-wide cursor-pointer select-none active" href="index.html">
+        <span class="text-accent">/</span> <span class="text-cream">Kolvren</span>
+      </a>
+      <ul id="nav-links" class="hidden md:flex items-center gap-10 list-none">
+        <li><a class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer active" href="index.html">Home</a></li>
+        <li><a class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer" href="services.html">Services</a></li>
+        <li><a class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer" href="about.html">About</a></li>
+        <li><a class="nav-link text-warm-grey text-[0.9rem] font-body font-medium uppercase tracking-[0.04em] cursor-pointer" href="contact.html">Contact</a></li>
       </ul>
-      <a data-id="16" class="hidden md:inline-flex items-center bg-cream text-dark font-display font-bold text-[0.85rem] uppercase tracking-[0.05em] rounded-full px-7 py-3 cursor-pointer btn-hover transition-all" href="contact.html">Book an Audit</a>
-      <button data-id="17" id="nav-toggle" class="md:hidden flex flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1" aria-label="Toggle menu">
-        <span data-id="18" class="block w-6 h-[2px] bg-cream rounded transition-all"></span>
-        <span data-id="19" class="block w-6 h-[2px] bg-cream rounded transition-all"></span>
-        <span data-id="20" class="block w-6 h-[2px] bg-cream rounded transition-all"></span>
+      <a class="hidden md:inline-flex items-center bg-cream text-dark font-display font-bold text-[0.85rem] uppercase tracking-[0.05em] rounded-full px-7 py-3 cursor-pointer btn-hover transition-all" href="contact.html">Book an Audit</a>
+      <button id="nav-toggle" class="nav__toggle" class="md:hidden flex flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1" aria-label="Toggle menu">
+        <span class="block w-6 h-[2px] bg-cream rounded transition-all"></span>
+        <span class="block w-6 h-[2px] bg-cream rounded transition-all"></span>
+        <span class="block w-6 h-[2px] bg-cream rounded transition-all"></span>
       </button>
     </div>
   </nav>
+<div class="nav__mobile" id="nav-mobile" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn--cream btn--sm" style="margin-top:8px;">Book an Audit</a>
+</div>
 
 <main>
 <!-- Hero -->
-    <section data-id="28" class="bg-dark relative overflow-hidden min-h-screen flex items-center pt-[68px]">
-      <div data-id="29" class="hero-slash-watermark absolute top-[-5%] right-[-5%] font-display font-[900] text-[40vw] leading-none text-[rgba(255,255,255,0.03)] select-none pointer-events-none z-0">/</div>
-      <div data-id="30" class="max-w-[1180px] mx-auto px-6 py-20 relative z-[1] w-full">
-        <div data-id="31" class="max-w-3xl">
-          <div data-id="32" class="text-accent font-body font-semibold text-[0.72rem] tracking-[0.18em] uppercase mb-6 fade-up">/ Microsoft Copilot Adoption Partner</div>
-          <h1 data-id="33" class="font-display font-[800] text-cream uppercase leading-[0.92] tracking-[-0.02em] mb-8 fade-up" style="font-size:clamp(3.5rem,10vw,9rem);">Your Team Has Copilot. Are They Using It?</h1>
-          <p data-id="34" class="text-warm-grey font-body text-[1.05rem] max-w-[500px] mb-12 fade-up">Most mid-market companies activate Microsoft Copilot and see 12% adoption within 90 days. Kolvren helps you hit 80%+ — with workflows that actually stick.</p>
-          <div data-id="35" class="flex gap-4 flex-wrap mb-16 fade-up">
-            <a data-id="36" class="inline-flex items-center gap-2 bg-cream text-dark font-display font-bold text-[0.9rem] uppercase tracking-[0.05em] rounded-full px-8 py-4 cursor-pointer btn-hover transition-all" href="contact.html">Book a Free Copilot ROI Audit <span data-id="37">→</span></a>
-            <a data-id="38" id="scroll-process-btn" class="inline-flex items-center gap-2 border-[1.5px] border-cream text-cream font-display font-bold text-[0.9rem] uppercase tracking-[0.05em] rounded-full px-8 py-4 cursor-pointer btn-hover transition-all bg-transparent">See How It Works</a>
+    <section class="bg-dark relative overflow-hidden min-h-screen flex items-center pt-[68px]">
+      <div class="hero-slash-watermark absolute top-[-5%] right-[-5%] font-display font-[900] text-[40vw] leading-none text-[rgba(255,255,255,0.03)] select-none pointer-events-none z-0">/</div>
+      <div class="max-w-[1180px] mx-auto px-6 py-20 relative z-[1] w-full">
+        <div class="max-w-3xl">
+          <div class="text-accent font-body font-semibold text-[0.72rem] tracking-[0.18em] uppercase mb-6 reveal">/ Microsoft Copilot Adoption Partner</div>
+          <h1 class="font-display font-[800] text-cream uppercase leading-[0.92] tracking-[-0.02em] mb-8 reveal" style="font-size:clamp(3.5rem,10vw,9rem);">Your Team Has Copilot. Are They Using It?</h1>
+          <p class="text-warm-grey font-body text-[1.05rem] max-w-[500px] mb-12 reveal">Most mid-market companies activate Microsoft Copilot and see 12% adoption within 90 days. Kolvren helps you hit 80%+ — with workflows that actually stick.</p>
+          <div class="flex gap-4 flex-wrap mb-16 reveal">
+            <a class="inline-flex items-center gap-2 bg-cream text-dark font-display font-bold text-[0.9rem] uppercase tracking-[0.05em] rounded-full px-8 py-4 cursor-pointer btn-hover transition-all" href="contact.html">Book a Free Copilot ROI Audit <span>→</span></a>
+            <a id="scroll-process-btn" class="inline-flex items-center gap-2 border-[1.5px] border-cream text-cream font-display font-bold text-[0.9rem] uppercase tracking-[0.05em] rounded-full px-8 py-4 cursor-pointer btn-hover transition-all bg-transparent">See How It Works</a>
           </div>
-          <div data-id="39" class="flex items-center gap-8 lg:gap-12 pt-12 border-t border-[rgba(255,255,255,0.08)] flex-wrap fade-up">
-            <div data-id="40">
-              <div data-id="41" class="font-display font-[800] text-cream text-[2.6rem] lg:text-[3rem] leading-none hero-stat" data-count="80" data-suffix="%+">0</div>
-              <div data-id="42" class="text-warm-grey font-body text-[0.78rem] uppercase tracking-wide mt-1">Avg. Adoption Rate Achieved</div>
+          <div class="flex items-center gap-8 lg:gap-12 pt-12 border-t border-[rgba(255,255,255,0.08)] flex-wrap reveal">
+            <div>
+              <div class="font-display font-[800] text-cream text-[2.6rem] lg:text-[3rem] leading-none hero-stat" data-count="80" data-suffix="%+">0</div>
+              <div class="text-warm-grey font-body text-[0.78rem] uppercase tracking-wide mt-1">Avg. Adoption Rate Achieved</div>
             </div>
-            <span data-id="43" class="text-accent font-display font-[800] text-[2rem]">/</span>
-            <div data-id="44">
-              <div data-id="45" class="font-display font-[800] text-cream text-[2.6rem] lg:text-[3rem] leading-none hero-stat" data-count="12" data-suffix=" Wks">0</div>
-              <div data-id="46" class="text-warm-grey font-body text-[0.78rem] uppercase tracking-wide mt-1">Typical Time to ROI</div>
+            <span class="text-accent font-display font-[800] text-[2rem]">/</span>
+            <div>
+              <div class="font-display font-[800] text-cream text-[2.6rem] lg:text-[3rem] leading-none hero-stat" data-count="12" data-suffix=" Wks">0</div>
+              <div class="text-warm-grey font-body text-[0.78rem] uppercase tracking-wide mt-1">Typical Time to ROI</div>
             </div>
-            <span data-id="47" class="text-accent font-display font-[800] text-[2rem]">/</span>
-            <div data-id="48">
-              <div data-id="49" class="font-display font-[800] text-cream text-[2.6rem] lg:text-[3rem] leading-none">$2.1M</div>
-              <div data-id="50" class="text-warm-grey font-body text-[0.78rem] uppercase tracking-wide mt-1">Avg. Annual Value / 200 Seats</div>
+            <span class="text-accent font-display font-[800] text-[2rem]">/</span>
+            <div>
+              <div class="font-display font-[800] text-cream text-[2.6rem] lg:text-[3rem] leading-none">$2.1M</div>
+              <div class="text-warm-grey font-body text-[0.78rem] uppercase tracking-wide mt-1">Avg. Annual Value / 200 Seats</div>
             </div>
           </div>
         </div>
@@ -98,199 +106,199 @@
     </section>
 
     <!-- Problem Section (LIGHT) -->
-    <section data-id="51" class="bg-cream-2 py-24 md:py-32">
-      <div data-id="52" class="max-w-[1180px] mx-auto px-6">
-        <div data-id="53" class="mb-16 fade-up">
-          <div data-id="54" class="text-accent font-body font-semibold text-[0.72rem] tracking-[0.18em] uppercase mb-4">/ The Real Problem</div>
-          <h2 data-id="55" class="font-display font-[800] text-black uppercase leading-[0.95]" style="font-size:clamp(2.8rem,6vw,5.5rem);">Copilot Is Live.<br data-id="56">Nothing Has Changed.</h2>
+    <section class="bg-cream-2 py-24 md:py-32">
+      <div class="max-w-[1180px] mx-auto px-6">
+        <div class="mb-16 reveal">
+          <div class="text-accent font-body font-semibold text-[0.72rem] tracking-[0.18em] uppercase mb-4">/ The Real Problem</div>
+          <h2 class="font-display font-[800] text-black uppercase leading-[0.95]" style="font-size:clamp(2.8rem,6vw,5.5rem);">Copilot Is Live.<br>Nothing Has Changed.</h2>
         </div>
-        <div data-id="57" class="grid grid-cols-1 md:grid-cols-3 gap-10 fade-up">
-          <div data-id="58">
-            <div data-id="59" class="flex items-baseline gap-2 mb-3">
-              <span data-id="60" class="text-accent font-display font-[800] text-[1.4rem]">/</span>
-              <h3 data-id="61" class="font-display font-bold text-black uppercase text-[1.2rem] tracking-wide">Licences Without Adoption</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 reveal">
+          <div>
+            <div class="flex items-baseline gap-2 mb-3">
+              <span class="text-accent font-display font-[800] text-[1.4rem]">/</span>
+              <h3 class="font-display font-bold text-black uppercase text-[1.2rem] tracking-wide">Licences Without Adoption</h3>
             </div>
-            <p data-id="62" class="text-warm-grey font-body text-[0.92rem]">Your organisation is paying for Copilot. But without structured enablement, 70% of seats go unused within 60 days. That's money leaving the building every month.</p>
+            <p class="text-warm-grey font-body text-[0.92rem]">Your organisation is paying for Copilot. But without structured enablement, 70% of seats go unused within 60 days. That's money leaving the building every month.</p>
           </div>
-          <div data-id="63">
-            <div data-id="64" class="flex items-baseline gap-2 mb-3">
-              <span data-id="65" class="text-accent font-display font-[800] text-[1.4rem]">/</span>
-              <h3 data-id="66" class="font-display font-bold text-black uppercase text-[1.2rem] tracking-wide">Training Without Transfer</h3>
+          <div>
+            <div class="flex items-baseline gap-2 mb-3">
+              <span class="text-accent font-display font-[800] text-[1.4rem]">/</span>
+              <h3 class="font-display font-bold text-black uppercase text-[1.2rem] tracking-wide">Training Without Transfer</h3>
             </div>
-            <p data-id="67" class="text-warm-grey font-body text-[0.92rem]">One-off workshops check a box. They don't change how your team writes emails, runs meetings, or analyses data. Real adoption requires workflow integration, not slide decks.</p>
+            <p class="text-warm-grey font-body text-[0.92rem]">One-off workshops check a box. They don't change how your team writes emails, runs meetings, or analyses data. Real adoption requires workflow integration, not slide decks.</p>
           </div>
-          <div data-id="68">
-            <div data-id="69" class="flex items-baseline gap-2 mb-3">
-              <span data-id="70" class="text-accent font-display font-[800] text-[1.4rem]">/</span>
-              <h3 data-id="71" class="font-display font-bold text-black uppercase text-[1.2rem] tracking-wide">Dashboards Without Direction</h3>
+          <div>
+            <div class="flex items-baseline gap-2 mb-3">
+              <span class="text-accent font-display font-[800] text-[1.4rem]">/</span>
+              <h3 class="font-display font-bold text-black uppercase text-[1.2rem] tracking-wide">Dashboards Without Direction</h3>
             </div>
-            <p data-id="72" class="text-warm-grey font-body text-[0.92rem]">Copilot usage reports tell you who clicked. They don't tell you whether it's saving time, reducing errors, or improving output quality. You need outcomes, not activity.</p>
+            <p class="text-warm-grey font-body text-[0.92rem]">Copilot usage reports tell you who clicked. They don't tell you whether it's saving time, reducing errors, or improving output quality. You need outcomes, not activity.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- How Kolvren Works (DARK) -->
-    <section data-id="73" id="home-process" class="bg-dark py-24 md:py-32">
-      <div data-id="74" class="max-w-[1180px] mx-auto px-6">
-        <div data-id="75" class="mb-16 text-center fade-up">
-          <div data-id="76" class="text-accent font-body font-semibold text-[0.72rem] tracking-[0.18em] uppercase mb-4">/ How Kolvren Works</div>
-          <h2 data-id="77" class="font-display font-[800] text-cream uppercase leading-[0.95]" style="font-size:clamp(2.8rem,6vw,5.5rem);">We Build the Bridge Between Licence and Value.</h2>
-          <p data-id="78" class="text-warm-grey font-body text-[1.05rem] mt-6 max-w-2xl mx-auto">Kolvren embeds with your team, maps your workflows, and engineers Copilot adoption that produces measurable results within 12 weeks — or we work until it does.</p>
+    <section id="home-process" class="bg-dark py-24 md:py-32">
+      <div class="max-w-[1180px] mx-auto px-6">
+        <div class="mb-16 text-center reveal">
+          <div class="text-accent font-body font-semibold text-[0.72rem] tracking-[0.18em] uppercase mb-4">/ How Kolvren Works</div>
+          <h2 class="font-display font-[800] text-cream uppercase leading-[0.95]" style="font-size:clamp(2.8rem,6vw,5.5rem);">We Build the Bridge Between Licence and Value.</h2>
+          <p class="text-warm-grey font-body text-[1.05rem] mt-6 max-w-2xl mx-auto">Kolvren embeds with your team, maps your workflows, and engineers Copilot adoption that produces measurable results within 12 weeks — or we work until it does.</p>
         </div>
-        <div data-id="79" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div data-id="80" class="border-t-2 border-accent pt-8 fade-up">
-            <div data-id="81" class="font-display font-[900] text-accent text-[4rem] leading-none mb-4">01</div>
-            <h4 data-id="82" class="font-display font-bold text-cream uppercase text-[1.4rem] tracking-wide mb-3">ROI Audit</h4>
-            <p data-id="83" class="text-warm-grey font-body text-[0.9rem]">We assess your current M365 environment, usage gaps, and highest-value workflow opportunities. You leave with a prioritised roadmap — free, with no obligation.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="border-t-2 border-accent pt-8 reveal">
+            <div class="font-display font-[900] text-accent text-[4rem] leading-none mb-4">01</div>
+            <h4 class="font-display font-bold text-cream uppercase text-[1.4rem] tracking-wide mb-3">ROI Audit</h4>
+            <p class="text-warm-grey font-body text-[0.9rem]">We assess your current M365 environment, usage gaps, and highest-value workflow opportunities. You leave with a prioritised roadmap — free, with no obligation.</p>
           </div>
-          <div data-id="84" class="border-t-2 border-accent pt-8 fade-up">
-            <div data-id="85" class="font-display font-[900] text-accent text-[4rem] leading-none mb-4">02</div>
-            <h4 data-id="86" class="font-display font-bold text-cream uppercase text-[1.4rem] tracking-wide mb-3">Workflow Mapping</h4>
-            <p data-id="87" class="text-warm-grey font-body text-[0.9rem]">We identify the 5–10 workflows where Copilot will compress the most time: meetings, reports, proposals, support tickets, onboarding, and more.</p>
+          <div class="border-t-2 border-accent pt-8 reveal">
+            <div class="font-display font-[900] text-accent text-[4rem] leading-none mb-4">02</div>
+            <h4 class="font-display font-bold text-cream uppercase text-[1.4rem] tracking-wide mb-3">Workflow Mapping</h4>
+            <p class="text-warm-grey font-body text-[0.9rem]">We identify the 5–10 workflows where Copilot will compress the most time: meetings, reports, proposals, support tickets, onboarding, and more.</p>
           </div>
-          <div data-id="88" class="border-t-2 border-accent pt-8 fade-up">
-            <div data-id="89" class="font-display font-[900] text-accent text-[4rem] leading-none mb-4">03</div>
-            <h4 data-id="90" class="font-display font-bold text-cream uppercase text-[1.4rem] tracking-wide mb-3">Enablement Build</h4>
-            <p data-id="91" class="text-warm-grey font-body text-[0.9rem]">We create role-specific prompt libraries, workflow playbooks, and training assets your team will actually use — built around your tools, not generic demos.</p>
+          <div class="border-t-2 border-accent pt-8 reveal">
+            <div class="font-display font-[900] text-accent text-[4rem] leading-none mb-4">03</div>
+            <h4 class="font-display font-bold text-cream uppercase text-[1.4rem] tracking-wide mb-3">Enablement Build</h4>
+            <p class="text-warm-grey font-body text-[0.9rem]">We create role-specific prompt libraries, workflow playbooks, and training assets your team will actually use — built around your tools, not generic demos.</p>
           </div>
-          <div data-id="92" class="border-t-2 border-accent pt-8 fade-up">
-            <div data-id="93" class="font-display font-[900] text-accent text-[4rem] leading-none mb-4">04</div>
-            <h4 data-id="94" class="font-display font-bold text-cream uppercase text-[1.4rem] tracking-wide mb-3">Adoption Governance</h4>
-            <p data-id="95" class="text-warm-grey font-body text-[0.9rem]">We install a 90-day adoption cadence with usage benchmarks, manager check-ins, and iteration cycles so ROI compounds over time, not decays.</p>
+          <div class="border-t-2 border-accent pt-8 reveal">
+            <div class="font-display font-[900] text-accent text-[4rem] leading-none mb-4">04</div>
+            <h4 class="font-display font-bold text-cream uppercase text-[1.4rem] tracking-wide mb-3">Adoption Governance</h4>
+            <p class="text-warm-grey font-body text-[0.9rem]">We install a 90-day adoption cadence with usage benchmarks, manager check-ins, and iteration cycles so ROI compounds over time, not decays.</p>
           </div>
         </div>
-        <div data-id="96" class="mt-14 text-center fade-up">
-          <a data-id="97" class="inline-flex items-center bg-cream text-dark font-display font-bold text-[0.9rem] uppercase tracking-[0.05em] rounded-full px-8 py-4 cursor-pointer btn-hover transition-all" href="contact.html">Book Your Free ROI Audit →</a>
+        <div class="mt-14 text-center reveal">
+          <a class="inline-flex items-center bg-cream text-dark font-display font-bold text-[0.9rem] uppercase tracking-[0.05em] rounded-full px-8 py-4 cursor-pointer btn-hover transition-all" href="contact.html">Book Your Free ROI Audit →</a>
         </div>
       </div>
     </section>
 
     <!-- Services Overview (LIGHT) -->
-    <section data-id="98" class="bg-cream-2 py-24 md:py-32">
-      <div data-id="99" class="max-w-[1180px] mx-auto px-6">
-        <div data-id="100" class="mb-16 fade-up">
-          <div data-id="101" class="text-accent font-body font-semibold text-[0.72rem] tracking-[0.18em] uppercase mb-4">/ What We Deliver</div>
-          <h2 data-id="102" class="font-display font-[800] text-black uppercase leading-[0.95]" style="font-size:clamp(2.8rem,6vw,5.5rem);">Six Ways Kolvren Drives Copilot ROI</h2>
+    <section class="bg-cream-2 py-24 md:py-32">
+      <div class="max-w-[1180px] mx-auto px-6">
+        <div class="mb-16 reveal">
+          <div class="text-accent font-body font-semibold text-[0.72rem] tracking-[0.18em] uppercase mb-4">/ What We Deliver</div>
+          <h2 class="font-display font-[800] text-black uppercase leading-[0.95]" style="font-size:clamp(2.8rem,6vw,5.5rem);">Six Ways Kolvren Drives Copilot ROI</h2>
         </div>
-        <div data-id="103" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div data-id="104" class="service-card bg-cream border border-border-light rounded-[4px] p-9 cursor-default fade-up">
-            <div data-id="105" class="flex items-baseline gap-2 mb-3">
-              <span data-id="106" class="sc-slash text-accent font-display font-[800] text-[1.4rem]">/</span>
-              <h3 data-id="107" class="sc-title font-display font-bold text-black uppercase text-[1.3rem] tracking-wide">Copilot ROI Audit</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="service-card bg-cream border border-border-light rounded-[4px] p-9 cursor-default reveal">
+            <div class="flex items-baseline gap-2 mb-3">
+              <span class="sc-slash text-accent font-display font-[800] text-[1.4rem]">/</span>
+              <h3 class="sc-title font-display font-bold text-black uppercase text-[1.3rem] tracking-wide">Copilot ROI Audit</h3>
             </div>
-            <div data-id="108" class="sc-border border-b border-border-light mb-4"></div>
-            <p data-id="109" class="sc-desc text-warm-grey font-body text-[0.92rem] mb-5">A structured assessment of your M365 environment, adoption baseline, and top workflow opportunities. Delivered in 5 business days.</p>
-            <div data-id="110" class="flex flex-wrap gap-2">
-              <span data-id="111" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Free</span>
-              <span data-id="112" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">No Obligation</span>
-              <span data-id="113" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Roadmap</span>
-            </div>
-          </div>
-          <div data-id="114" class="service-card bg-cream border border-border-light rounded-[4px] p-9 cursor-default fade-up">
-            <div data-id="115" class="flex items-baseline gap-2 mb-3">
-              <span data-id="116" class="sc-slash text-accent font-display font-[800] text-[1.4rem]">/</span>
-              <h3 data-id="117" class="sc-title font-display font-bold text-black uppercase text-[1.3rem] tracking-wide">Workflow Implementation</h3>
-            </div>
-            <div data-id="118" class="sc-border border-b border-border-light mb-4"></div>
-            <p data-id="119" class="sc-desc text-warm-grey font-body text-[0.92rem] mb-5">We engineer Copilot into your real daily workflows — from proposal writing to data analysis — so adoption becomes the path of least resistance.</p>
-            <div data-id="120" class="flex flex-wrap gap-2">
-              <span data-id="121" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Role-Specific</span>
-              <span data-id="122" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Embedded</span>
-              <span data-id="123" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Measurable</span>
+            <div class="sc-border border-b border-border-light mb-4"></div>
+            <p class="sc-desc text-warm-grey font-body text-[0.92rem] mb-5">A structured assessment of your M365 environment, adoption baseline, and top workflow opportunities. Delivered in 5 business days.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Free</span>
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">No Obligation</span>
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Roadmap</span>
             </div>
           </div>
-          <div data-id="124" class="service-card bg-cream border border-border-light rounded-[4px] p-9 cursor-default fade-up">
-            <div data-id="125" class="flex items-baseline gap-2 mb-3">
-              <span data-id="126" class="sc-slash text-accent font-display font-[800] text-[1.4rem]">/</span>
-              <h3 data-id="127" class="sc-title font-display font-bold text-black uppercase text-[1.3rem] tracking-wide">Enablement &amp; Training</h3>
+          <div class="service-card bg-cream border border-border-light rounded-[4px] p-9 cursor-default reveal">
+            <div class="flex items-baseline gap-2 mb-3">
+              <span class="sc-slash text-accent font-display font-[800] text-[1.4rem]">/</span>
+              <h3 class="sc-title font-display font-bold text-black uppercase text-[1.3rem] tracking-wide">Workflow Implementation</h3>
             </div>
-            <div data-id="128" class="sc-border border-b border-border-light mb-4"></div>
-            <p data-id="129" class="sc-desc text-warm-grey font-body text-[0.92rem] mb-5">Role-based training built around your actual tools and processes. Not generic Copilot demos. Prompt libraries, playbooks, and live coaching.</p>
-            <div data-id="130" class="flex flex-wrap gap-2">
-              <span data-id="131" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Role-Based</span>
-              <span data-id="132" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Practical</span>
-              <span data-id="133" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Sticky</span>
-            </div>
-          </div>
-          <div data-id="134" class="service-card bg-cream border border-border-light rounded-[4px] p-9 cursor-default fade-up">
-            <div data-id="135" class="flex items-baseline gap-2 mb-3">
-              <span data-id="136" class="sc-slash text-accent font-display font-[800] text-[1.4rem]">/</span>
-              <h3 data-id="137" class="sc-title font-display font-bold text-black uppercase text-[1.3rem] tracking-wide">Adoption Analytics</h3>
-            </div>
-            <div data-id="138" class="sc-border border-b border-border-light mb-4"></div>
-            <p data-id="139" class="sc-desc text-warm-grey font-body text-[0.92rem] mb-5">Monthly reporting that tracks usage depth, time-saved, and output quality — not just seat activation. Tied directly to business KPIs.</p>
-            <div data-id="140" class="flex flex-wrap gap-2">
-              <span data-id="141" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">KPI-Linked</span>
-              <span data-id="142" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Monthly</span>
-              <span data-id="143" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Executive-Ready</span>
+            <div class="sc-border border-b border-border-light mb-4"></div>
+            <p class="sc-desc text-warm-grey font-body text-[0.92rem] mb-5">We engineer Copilot into your real daily workflows — from proposal writing to data analysis — so adoption becomes the path of least resistance.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Role-Specific</span>
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Embedded</span>
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Measurable</span>
             </div>
           </div>
-          <div data-id="144" class="service-card bg-cream border border-border-light rounded-[4px] p-9 cursor-default fade-up">
-            <div data-id="145" class="flex items-baseline gap-2 mb-3">
-              <span data-id="146" class="sc-slash text-accent font-display font-[800] text-[1.4rem]">/</span>
-              <h3 data-id="147" class="sc-title font-display font-bold text-black uppercase text-[1.3rem] tracking-wide">Change Management</h3>
+          <div class="service-card bg-cream border border-border-light rounded-[4px] p-9 cursor-default reveal">
+            <div class="flex items-baseline gap-2 mb-3">
+              <span class="sc-slash text-accent font-display font-[800] text-[1.4rem]">/</span>
+              <h3 class="sc-title font-display font-bold text-black uppercase text-[1.3rem] tracking-wide">Enablement &amp; Training</h3>
             </div>
-            <div data-id="148" class="sc-border border-b border-border-light mb-4"></div>
-            <p data-id="149" class="sc-desc text-warm-grey font-body text-[0.92rem] mb-5">We handle the internal communication, manager enablement, and cultural change required to make Copilot adoption durable.</p>
-            <div data-id="150" class="flex flex-wrap gap-2">
-              <span data-id="151" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Manager-Led</span>
-              <span data-id="152" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Comms</span>
-              <span data-id="153" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Culture</span>
+            <div class="sc-border border-b border-border-light mb-4"></div>
+            <p class="sc-desc text-warm-grey font-body text-[0.92rem] mb-5">Role-based training built around your actual tools and processes. Not generic Copilot demos. Prompt libraries, playbooks, and live coaching.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Role-Based</span>
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Practical</span>
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Sticky</span>
             </div>
           </div>
-          <div data-id="154" class="service-card bg-cream border border-border-light rounded-[4px] p-9 cursor-default fade-up">
-            <div data-id="155" class="flex items-baseline gap-2 mb-3">
-              <span data-id="156" class="sc-slash text-accent font-display font-[800] text-[1.4rem]">/</span>
-              <h3 data-id="157" class="sc-title font-display font-bold text-black uppercase text-[1.3rem] tracking-wide">Governance &amp; Compliance</h3>
+          <div class="service-card bg-cream border border-border-light rounded-[4px] p-9 cursor-default reveal">
+            <div class="flex items-baseline gap-2 mb-3">
+              <span class="sc-slash text-accent font-display font-[800] text-[1.4rem]">/</span>
+              <h3 class="sc-title font-display font-bold text-black uppercase text-[1.3rem] tracking-wide">Adoption Analytics</h3>
             </div>
-            <div data-id="158" class="sc-border border-b border-border-light mb-4"></div>
-            <p data-id="159" class="sc-desc text-warm-grey font-body text-[0.92rem] mb-5">M365 Copilot governance frameworks, data sensitivity configurations, and acceptable-use policies for IT and legal peace of mind.</p>
-            <div data-id="160" class="flex flex-wrap gap-2">
-              <span data-id="161" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">IT-Ready</span>
-              <span data-id="162" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Policy</span>
-              <span data-id="163" class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Secure</span>
+            <div class="sc-border border-b border-border-light mb-4"></div>
+            <p class="sc-desc text-warm-grey font-body text-[0.92rem] mb-5">Monthly reporting that tracks usage depth, time-saved, and output quality — not just seat activation. Tied directly to business KPIs.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">KPI-Linked</span>
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Monthly</span>
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Executive-Ready</span>
+            </div>
+          </div>
+          <div class="service-card bg-cream border border-border-light rounded-[4px] p-9 cursor-default reveal">
+            <div class="flex items-baseline gap-2 mb-3">
+              <span class="sc-slash text-accent font-display font-[800] text-[1.4rem]">/</span>
+              <h3 class="sc-title font-display font-bold text-black uppercase text-[1.3rem] tracking-wide">Change Management</h3>
+            </div>
+            <div class="sc-border border-b border-border-light mb-4"></div>
+            <p class="sc-desc text-warm-grey font-body text-[0.92rem] mb-5">We handle the internal communication, manager enablement, and cultural change required to make Copilot adoption durable.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Manager-Led</span>
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Comms</span>
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Culture</span>
+            </div>
+          </div>
+          <div class="service-card bg-cream border border-border-light rounded-[4px] p-9 cursor-default reveal">
+            <div class="flex items-baseline gap-2 mb-3">
+              <span class="sc-slash text-accent font-display font-[800] text-[1.4rem]">/</span>
+              <h3 class="sc-title font-display font-bold text-black uppercase text-[1.3rem] tracking-wide">Governance &amp; Compliance</h3>
+            </div>
+            <div class="sc-border border-b border-border-light mb-4"></div>
+            <p class="sc-desc text-warm-grey font-body text-[0.92rem] mb-5">M365 Copilot governance frameworks, data sensitivity configurations, and acceptable-use policies for IT and legal peace of mind.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">IT-Ready</span>
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Policy</span>
+              <span class="sc-tag bg-dark text-cream font-body font-semibold text-[0.7rem] uppercase tracking-wide rounded-full px-3 py-1">Secure</span>
             </div>
           </div>
         </div>
-        <div data-id="164" class="mt-12 fade-up">
-          <a data-id="165" class="text-black font-body font-semibold text-[0.95rem] cursor-pointer underline underline-offset-4 decoration-accent hover:text-accent transition-colors" href="services.html">/ View Full Service Details →</a>
+        <div class="mt-12 reveal">
+          <a class="text-black font-body font-semibold text-[0.95rem] cursor-pointer underline underline-offset-4 decoration-accent hover:text-accent transition-colors" href="services.html">/ View Full Service Details →</a>
         </div>
       </div>
     </section>
 
     <!-- Client Results (DARK) -->
-    <section data-id="166" class="bg-dark py-24 md:py-32">
-      <div data-id="167" class="max-w-[1180px] mx-auto px-6">
-        <div data-id="168" class="mb-16 text-center fade-up">
-          <div data-id="169" class="text-accent font-body font-semibold text-[0.72rem] tracking-[0.18em] uppercase mb-4">/ Client Results</div>
-          <h2 data-id="170" class="font-display font-[800] text-cream uppercase leading-[0.95]" style="font-size:clamp(2.8rem,6vw,5.5rem);">What 80% Adoption Looks Like.</h2>
+    <section class="bg-dark py-24 md:py-32">
+      <div class="max-w-[1180px] mx-auto px-6">
+        <div class="mb-16 text-center reveal">
+          <div class="text-accent font-body font-semibold text-[0.72rem] tracking-[0.18em] uppercase mb-4">/ Client Results</div>
+          <h2 class="font-display font-[800] text-cream uppercase leading-[0.95]" style="font-size:clamp(2.8rem,6vw,5.5rem);">What 80% Adoption Looks Like.</h2>
         </div>
-        <div data-id="171" class="space-y-16">
-          <div data-id="172" class="fade-up">
-            <p data-id="173" class="font-body text-cream text-[1.3rem] md:text-[1.6rem] italic leading-relaxed max-w-3xl"><span data-id="174" class="text-accent font-display font-[800] text-[2rem] not-italic mr-2">/</span>"Kolvren mapped our proposal workflow to Copilot in three weeks. Our team now produces first drafts 60% faster. That's not a productivity stat — that's two extra proposals per rep per month."</p>
-            <div data-id="175" class="mt-6 flex items-center gap-3">
-              <span data-id="176" class="text-warm-grey font-body font-semibold text-[0.8rem] uppercase tracking-[0.1em]">Operations Director</span>
-              <span data-id="177" class="text-accent">/</span>
-              <span data-id="178" class="text-warm-grey-light font-body text-[0.8rem] uppercase tracking-[0.08em]">B2B Professional Services Firm · 220 Employees</span>
+        <div class="space-y-16">
+          <div class="reveal">
+            <p class="font-body text-cream text-[1.3rem] md:text-[1.6rem] italic leading-relaxed max-w-3xl"><span class="text-accent font-display font-[800] text-[2rem] not-italic mr-2">/</span>"Kolvren mapped our proposal workflow to Copilot in three weeks. Our team now produces first drafts 60% faster. That's not a productivity stat — that's two extra proposals per rep per month."</p>
+            <div class="mt-6 flex items-center gap-3">
+              <span class="text-warm-grey font-body font-semibold text-[0.8rem] uppercase tracking-[0.1em]">Operations Director</span>
+              <span class="text-accent">/</span>
+              <span class="text-warm-grey-light font-body text-[0.8rem] uppercase tracking-[0.08em]">B2B Professional Services Firm · 220 Employees</span>
             </div>
           </div>
-          <div data-id="179" class="border-t border-[rgba(255,255,255,0.08)]"></div>
-          <div data-id="180" class="fade-up">
-            <p data-id="181" class="font-body text-cream text-[1.3rem] md:text-[1.6rem] italic leading-relaxed max-w-3xl"><span data-id="182" class="text-accent font-display font-[800] text-[2rem] not-italic mr-2">/</span>"We went from 9% active Copilot usage to 74% in 11 weeks. The difference was workflow integration, not more training videos."</p>
-            <div data-id="183" class="mt-6 flex items-center gap-3">
-              <span data-id="184" class="text-warm-grey font-body font-semibold text-[0.8rem] uppercase tracking-[0.1em]">IT Director</span>
-              <span data-id="185" class="text-accent">/</span>
-              <span data-id="186" class="text-warm-grey-light font-body text-[0.8rem] uppercase tracking-[0.08em]">Mid-Market Financial Services · 380 Employees</span>
+          <div class="border-t border-[rgba(255,255,255,0.08)]"></div>
+          <div class="reveal">
+            <p class="font-body text-cream text-[1.3rem] md:text-[1.6rem] italic leading-relaxed max-w-3xl"><span class="text-accent font-display font-[800] text-[2rem] not-italic mr-2">/</span>"We went from 9% active Copilot usage to 74% in 11 weeks. The difference was workflow integration, not more training videos."</p>
+            <div class="mt-6 flex items-center gap-3">
+              <span class="text-warm-grey font-body font-semibold text-[0.8rem] uppercase tracking-[0.1em]">IT Director</span>
+              <span class="text-accent">/</span>
+              <span class="text-warm-grey-light font-body text-[0.8rem] uppercase tracking-[0.08em]">Mid-Market Financial Services · 380 Employees</span>
             </div>
           </div>
-          <div data-id="187" class="border-t border-[rgba(255,255,255,0.08)]"></div>
-          <div data-id="188" class="fade-up">
-            <p data-id="189" class="font-body text-cream text-[1.3rem] md:text-[1.6rem] italic leading-relaxed max-w-3xl"><span data-id="190" class="text-accent font-display font-[800] text-[2rem] not-italic mr-2">/</span>"The ROI audit alone changed how we thought about AI adoption. We stopped asking 'are people using it?' and started asking 'is it making work better?' Kolvren gave us the framework to answer that."</p>
-            <div data-id="191" class="mt-6 flex items-center gap-3">
-              <span data-id="192" class="text-warm-grey font-body font-semibold text-[0.8rem] uppercase tracking-[0.1em]">COO</span>
-              <span data-id="193" class="text-accent">/</span>
-              <span data-id="194" class="text-warm-grey-light font-body text-[0.8rem] uppercase tracking-[0.08em]">Regional Healthcare Administration Group · 150 Employees</span>
+          <div class="border-t border-[rgba(255,255,255,0.08)]"></div>
+          <div class="reveal">
+            <p class="font-body text-cream text-[1.3rem] md:text-[1.6rem] italic leading-relaxed max-w-3xl"><span class="text-accent font-display font-[800] text-[2rem] not-italic mr-2">/</span>"The ROI audit alone changed how we thought about AI adoption. We stopped asking 'are people using it?' and started asking 'is it making work better?' Kolvren gave us the framework to answer that."</p>
+            <div class="mt-6 flex items-center gap-3">
+              <span class="text-warm-grey font-body font-semibold text-[0.8rem] uppercase tracking-[0.1em]">COO</span>
+              <span class="text-accent">/</span>
+              <span class="text-warm-grey-light font-body text-[0.8rem] uppercase tracking-[0.08em]">Regional Healthcare Administration Group · 150 Employees</span>
             </div>
           </div>
         </div>
@@ -298,182 +306,133 @@
     </section>
 
     <!-- ROI Calculator Teaser (LIGHT) -->
-    <section data-id="195" class="bg-cream-2 py-24 md:py-32">
-      <div data-id="196" class="max-w-[1180px] mx-auto px-6">
-        <div data-id="197" class="mb-16 fade-up">
-          <div data-id="198" class="text-accent font-body font-semibold text-[0.72rem] tracking-[0.18em] uppercase mb-4">/ The Business Case</div>
-          <h2 data-id="199" class="font-display font-[800] text-black uppercase leading-[0.95]" style="font-size:clamp(2.8rem,6vw,5.5rem);">What Is Low Adoption Costing You?</h2>
+    <section class="bg-cream-2 py-24 md:py-32">
+      <div class="max-w-[1180px] mx-auto px-6">
+        <div class="mb-16 reveal">
+          <div class="text-accent font-body font-semibold text-[0.72rem] tracking-[0.18em] uppercase mb-4">/ The Business Case</div>
+          <h2 class="font-display font-[800] text-black uppercase leading-[0.95]" style="font-size:clamp(2.8rem,6vw,5.5rem);">What Is Low Adoption Costing You?</h2>
         </div>
-        <div data-id="200" class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start fade-up">
-          <div data-id="201">
-            <p data-id="202" class="text-warm-grey font-body text-[1rem] mb-4">A 200-seat Copilot deployment at $30/user/month costs $72,000 per year. At 15% active adoption, you are generating value from 30 licences while paying for 200. The remaining $61,200 is waste.</p>
-            <p data-id="203" class="text-warm-grey font-body text-[1rem]">Kolvren's average client reaches 78% active adoption within 90 days — turning that waste into measurable output.</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start reveal">
+          <div>
+            <p class="text-warm-grey font-body text-[1rem] mb-4">A 200-seat Copilot deployment at $30/user/month costs $72,000 per year. At 15% active adoption, you are generating value from 30 licences while paying for 200. The remaining $61,200 is waste.</p>
+            <p class="text-warm-grey font-body text-[1rem]">Kolvren's average client reaches 78% active adoption within 90 days — turning that waste into measurable output.</p>
           </div>
-          <div data-id="204" class="bg-dark rounded-[4px] p-8 relative overflow-hidden">
-            <div data-id="205" class="absolute top-2 right-4 font-display font-[900] text-[8rem] leading-none text-[rgba(255,255,255,0.04)] select-none pointer-events-none">/</div>
-            <div data-id="206" class="space-y-6 relative z-[1]">
-              <div data-id="207" class="border-b border-[rgba(255,255,255,0.08)] pb-5">
-                <div data-id="208" class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.1em] mb-2">At 15% Adoption</div>
-                <div data-id="209" class="font-display font-[800] text-cream text-[2rem] leading-none">~$10,800 of value</div>
-                <div data-id="210" class="text-warm-grey font-body text-[0.85rem] mt-1">$72,000 spend</div>
+          <div class="bg-dark rounded-[4px] p-8 relative overflow-hidden">
+            <div class="absolute top-2 right-4 font-display font-[900] text-[8rem] leading-none text-[rgba(255,255,255,0.04)] select-none pointer-events-none">/</div>
+            <div class="space-y-6 relative z-[1]">
+              <div class="border-b border-[rgba(255,255,255,0.08)] pb-5">
+                <div class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.1em] mb-2">At 15% Adoption</div>
+                <div class="font-display font-[800] text-cream text-[2rem] leading-none">~$10,800 of value</div>
+                <div class="text-warm-grey font-body text-[0.85rem] mt-1">$72,000 spend</div>
               </div>
-              <div data-id="211" class="border-b border-[rgba(255,255,255,0.08)] pb-5">
-                <div data-id="212" class="text-accent font-body font-semibold text-[0.72rem] uppercase tracking-[0.1em] mb-2">At 78% Adoption (Kolvren Avg.)</div>
-                <div data-id="213" class="font-display font-[800] text-accent text-[2rem] leading-none">~$56,000 of value</div>
-                <div data-id="214" class="text-warm-grey font-body text-[0.85rem] mt-1">$72,000 spend</div>
+              <div class="border-b border-[rgba(255,255,255,0.08)] pb-5">
+                <div class="text-accent font-body font-semibold text-[0.72rem] uppercase tracking-[0.1em] mb-2">At 78% Adoption (Kolvren Avg.)</div>
+                <div class="font-display font-[800] text-accent text-[2rem] leading-none">~$56,000 of value</div>
+                <div class="text-warm-grey font-body text-[0.85rem] mt-1">$72,000 spend</div>
               </div>
-              <div data-id="215">
-                <div data-id="216" class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.1em] mb-2">Kolvren Fee</div>
-                <div data-id="217" class="font-display font-[800] text-cream text-[1.4rem] leading-none">Typically 1–2× the value unlocked in month one alone</div>
+              <div>
+                <div class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.1em] mb-2">Kolvren Fee</div>
+                <div class="font-display font-[800] text-cream text-[1.4rem] leading-none">Typically 1–2× the value unlocked in month one alone</div>
               </div>
             </div>
           </div>
         </div>
-        <div data-id="218" class="mt-12 fade-up">
-          <a data-id="219" class="inline-flex items-center w-full justify-center bg-dark text-cream font-display font-bold text-[0.9rem] uppercase tracking-[0.05em] rounded-full px-8 py-4 cursor-pointer btn-hover transition-all" href="contact.html">Book a Free ROI Audit to See Your Numbers →</a>
+        <div class="mt-12 reveal">
+          <a class="inline-flex items-center w-full justify-center bg-dark text-cream font-display font-bold text-[0.9rem] uppercase tracking-[0.05em] rounded-full px-8 py-4 cursor-pointer btn-hover transition-all" href="contact.html">Book a Free ROI Audit to See Your Numbers →</a>
         </div>
       </div>
     </section>
 
     <!-- Who We Work With (DARK) -->
-    <section data-id="220" class="bg-dark py-24 md:py-32">
-      <div data-id="221" class="max-w-[1180px] mx-auto px-6">
-        <div data-id="222" class="mb-16 text-center fade-up">
-          <div data-id="223" class="text-accent font-body font-semibold text-[0.72rem] tracking-[0.18em] uppercase mb-4">/ Ideal Clients</div>
-          <h2 data-id="224" class="font-display font-[800] text-cream uppercase leading-[0.95]" style="font-size:clamp(2.8rem,6vw,5.5rem);">Built for Mid-Market Operations Leaders.</h2>
-          <p data-id="225" class="text-warm-grey font-body text-[1.05rem] mt-6 max-w-2xl mx-auto">Kolvren is purpose-built for organisations with 50–500 employees who have activated Microsoft 365 Copilot and need a partner — not a vendor — to make it pay.</p>
+    <section class="bg-dark py-24 md:py-32">
+      <div class="max-w-[1180px] mx-auto px-6">
+        <div class="mb-16 text-center reveal">
+          <div class="text-accent font-body font-semibold text-[0.72rem] tracking-[0.18em] uppercase mb-4">/ Ideal Clients</div>
+          <h2 class="font-display font-[800] text-cream uppercase leading-[0.95]" style="font-size:clamp(2.8rem,6vw,5.5rem);">Built for Mid-Market Operations Leaders.</h2>
+          <p class="text-warm-grey font-body text-[1.05rem] mt-6 max-w-2xl mx-auto">Kolvren is purpose-built for organisations with 50–500 employees who have activated Microsoft 365 Copilot and need a partner — not a vendor — to make it pay.</p>
         </div>
-        <div data-id="226" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 fade-up">
-          <div data-id="227" class="bg-dark-2 border border-[rgba(255,255,255,0.08)] rounded-[4px] p-8">
-            <div data-id="228" class="font-display font-bold text-accent uppercase text-[1.1rem] tracking-wide mb-3">COO</div>
-            <p data-id="229" class="text-warm-grey font-body text-[0.9rem]">You want to know what Copilot is actually delivering and whether your investment is justified. We give you the numbers.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+          <div class="bg-dark-2 border border-[rgba(255,255,255,0.08)] rounded-[4px] p-8">
+            <div class="font-display font-bold text-accent uppercase text-[1.1rem] tracking-wide mb-3">COO</div>
+            <p class="text-warm-grey font-body text-[0.9rem]">You want to know what Copilot is actually delivering and whether your investment is justified. We give you the numbers.</p>
           </div>
-          <div data-id="230" class="bg-dark-2 border border-[rgba(255,255,255,0.08)] rounded-[4px] p-8">
-            <div data-id="231" class="font-display font-bold text-accent uppercase text-[1.1rem] tracking-wide mb-3">IT Director</div>
-            <p data-id="232" class="text-warm-grey font-body text-[0.9rem]">You've deployed the licences. Now you need governance, security, and a plan that doesn't create a support burden.</p>
+          <div class="bg-dark-2 border border-[rgba(255,255,255,0.08)] rounded-[4px] p-8">
+            <div class="font-display font-bold text-accent uppercase text-[1.1rem] tracking-wide mb-3">IT Director</div>
+            <p class="text-warm-grey font-body text-[0.9rem]">You've deployed the licences. Now you need governance, security, and a plan that doesn't create a support burden.</p>
           </div>
-          <div data-id="233" class="bg-dark-2 border border-[rgba(255,255,255,0.08)] rounded-[4px] p-8">
-            <div data-id="234" class="font-display font-bold text-accent uppercase text-[1.1rem] tracking-wide mb-3">HR &amp; Enablement</div>
-            <p data-id="235" class="text-warm-grey font-body text-[0.9rem]">You need training that changes behaviour, not ticks a box. We build enablement that transfers to the job.</p>
+          <div class="bg-dark-2 border border-[rgba(255,255,255,0.08)] rounded-[4px] p-8">
+            <div class="font-display font-bold text-accent uppercase text-[1.1rem] tracking-wide mb-3">HR &amp; Enablement</div>
+            <p class="text-warm-grey font-body text-[0.9rem]">You need training that changes behaviour, not ticks a box. We build enablement that transfers to the job.</p>
           </div>
-          <div data-id="236" class="bg-dark-2 border border-[rgba(255,255,255,0.08)] rounded-[4px] p-8">
-            <div data-id="237" class="font-display font-bold text-accent uppercase text-[1.1rem] tracking-wide mb-3">Operations Leader</div>
-            <p data-id="238" class="text-warm-grey font-body text-[0.9rem]">You want specific workflows automated and improved. We map, build, and measure the ones that matter most.</p>
+          <div class="bg-dark-2 border border-[rgba(255,255,255,0.08)] rounded-[4px] p-8">
+            <div class="font-display font-bold text-accent uppercase text-[1.1rem] tracking-wide mb-3">Operations Leader</div>
+            <p class="text-warm-grey font-body text-[0.9rem]">You want specific workflows automated and improved. We map, build, and measure the ones that matter most.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Final CTA Banner (DARK) -->
-    <section data-id="239" class="bg-dark py-24 md:py-32 relative overflow-hidden border-t border-[rgba(255,255,255,0.08)]">
-      <div data-id="240" class="absolute top-[-10%] right-[-10%] font-display font-[900] text-[30vw] leading-none text-[rgba(255,255,255,0.02)] select-none pointer-events-none">/</div>
-      <div data-id="241" class="max-w-[1180px] mx-auto px-6 text-center relative z-[1]">
-        <h2 data-id="242" class="font-display font-[800] text-cream uppercase leading-[0.95] mb-6 fade-up" style="font-size:clamp(2.5rem,5.5vw,5rem);">Find Out What Copilot Should Be Delivering for Your Business.</h2>
-        <p data-id="243" class="text-warm-grey font-body text-[1.05rem] mb-10 max-w-xl mx-auto fade-up">Book a free 45-minute Copilot ROI Audit. No sales pitch. Just a clear picture of where you are, where you could be, and what it would take to get there.</p>
-        <div data-id="244" class="fade-up">
-          <a data-id="245" class="inline-flex items-center bg-accent text-dark font-display font-bold text-[0.9rem] uppercase tracking-[0.05em] rounded-full px-8 py-4 cursor-pointer btn-hover transition-all" href="contact.html">Book Your Free Copilot ROI Audit →</a>
+    <section class="bg-dark py-24 md:py-32 relative overflow-hidden border-t border-[rgba(255,255,255,0.08)]">
+      <div class="absolute top-[-10%] right-[-10%] font-display font-[900] text-[30vw] leading-none text-[rgba(255,255,255,0.02)] select-none pointer-events-none">/</div>
+      <div class="max-w-[1180px] mx-auto px-6 text-center relative z-[1]">
+        <h2 class="font-display font-[800] text-cream uppercase leading-[0.95] mb-6 reveal" style="font-size:clamp(2.5rem,5.5vw,5rem);">Find Out What Copilot Should Be Delivering for Your Business.</h2>
+        <p class="text-warm-grey font-body text-[1.05rem] mb-10 max-w-xl mx-auto reveal">Book a free 45-minute Copilot ROI Audit. No sales pitch. Just a clear picture of where you are, where you could be, and what it would take to get there.</p>
+        <div class="reveal">
+          <a class="inline-flex items-center bg-accent text-dark font-display font-bold text-[0.9rem] uppercase tracking-[0.05em] rounded-full px-8 py-4 cursor-pointer btn-hover transition-all" href="contact.html">Book Your Free Copilot ROI Audit →</a>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer data-id="246" class="bg-dark pt-20 pb-0 relative overflow-hidden">
-      <div data-id="247" class="footer-watermark font-display font-[900] text-[8vw] text-[rgba(255,255,255,0.04)] uppercase leading-none text-center select-none pointer-events-none mb-12">Kolvren</div>
-      <div data-id="248" class="max-w-[1180px] mx-auto px-6">
-        <div data-id="249" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          <div data-id="250">
-            <div data-id="251" class="font-display font-[800] text-[1.4rem] mb-4"><span data-id="252" class="text-accent">/</span> <span data-id="253" class="text-cream">Kolvren</span></div>
-            <p data-id="254" class="text-warm-grey font-body text-[0.88rem] leading-relaxed mb-3">Microsoft Copilot adoption partner for mid-market organisations.</p>
-            <p data-id="255" class="text-warm-grey font-body text-[0.88rem]">ceo@anchorforhotels.com</p>
-            <p data-id="256" class="text-warm-grey font-body text-[0.88rem]">+1 (706) 350-3883</p>
+    <footer class="bg-dark pt-20 pb-0 relative overflow-hidden">
+      <div class="footer-watermark font-display font-[900] text-[8vw] text-[rgba(255,255,255,0.04)] uppercase leading-none text-center select-none pointer-events-none mb-12">Kolvren</div>
+      <div class="max-w-[1180px] mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          <div>
+            <div class="font-display font-[800] text-[1.4rem] mb-4"><span class="text-accent">/</span> <span class="text-cream">Kolvren</span></div>
+            <p class="text-warm-grey font-body text-[0.88rem] leading-relaxed mb-3">Microsoft Copilot adoption partner for mid-market organisations.</p>
+            <p class="text-warm-grey font-body text-[0.88rem]">ceo@anchorforhotels.com</p>
+            <p class="text-warm-grey font-body text-[0.88rem]">(706) 350-3883</p>
           </div>
-          <div data-id="257">
-            <h5 data-id="258" class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.14em] mb-5">Services</h5>
-            <ul data-id="259" class="space-y-3 list-none">
-              <li data-id="260"><a data-id="261" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Copilot ROI Audit</a></li>
-              <li data-id="262"><a data-id="263" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Workflow Implementation</a></li>
-              <li data-id="264"><a data-id="265" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Enablement &amp; Training</a></li>
-              <li data-id="266"><a data-id="267" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Adoption Analytics</a></li>
-              <li data-id="268"><a data-id="269" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Change Management</a></li>
-              <li data-id="270"><a data-id="271" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Governance &amp; Compliance</a></li>
+          <div>
+            <h5 class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.14em] mb-5">Services</h5>
+            <ul class="space-y-3 list-none">
+              <li><a class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Copilot ROI Audit</a></li>
+              <li><a class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Workflow Implementation</a></li>
+              <li><a class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Enablement &amp; Training</a></li>
+              <li><a class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Adoption Analytics</a></li>
+              <li><a class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Change Management</a></li>
+              <li><a class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Governance &amp; Compliance</a></li>
             </ul>
           </div>
-          <div data-id="272">
-            <h5 data-id="273" class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.14em] mb-5">Company</h5>
-            <ul data-id="274" class="space-y-3 list-none">
-              <li data-id="275"><a data-id="276" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="about.html">About</a></li>
-              <li data-id="277"><a data-id="278" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="about.html">Our Approach</a></li>
-              <li data-id="279"><a data-id="280" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="contact.html">Contact</a></li>
-              <li data-id="281"><a data-id="282" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="contact.html">Book an Audit</a></li>
+          <div>
+            <h5 class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.14em] mb-5">Company</h5>
+            <ul class="space-y-3 list-none">
+              <li><a class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="about.html">About</a></li>
+              <li><a class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="about.html">Our Approach</a></li>
+              <li><a class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="contact.html">Contact</a></li>
+              <li><a class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="contact.html">Book an Audit</a></li>
             </ul>
           </div>
-          <div data-id="283">
-            <h5 data-id="284" class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.14em] mb-5">Certifications</h5>
-            <ul data-id="285" class="space-y-3 list-none">
-              <li data-id="286"><span data-id="287" class="text-warm-grey font-body text-[0.9rem]">Microsoft Solutions Partner</span></li>
-              <li data-id="288"><span data-id="289" class="text-warm-grey font-body text-[0.9rem]">M365 Certified</span></li>
+          <div>
+            <h5 class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.14em] mb-5">Certifications</h5>
+            <ul class="space-y-3 list-none">
+              <li><span class="text-warm-grey font-body text-[0.9rem]">Microsoft Solutions Partner</span></li>
+              <li><span class="text-warm-grey font-body text-[0.9rem]">M365 Certified</span></li>
             </ul>
           </div>
         </div>
-        <div data-id="290" class="border-t border-[rgba(255,255,255,0.08)] py-6 flex items-center justify-between flex-wrap gap-4">
-          <p data-id="291" class="text-warm-grey-light font-body text-[0.78rem]">© 2026 Kolvren LLC. All rights reserved. Made by Copilot</p>
-          <div data-id="292" class="flex gap-4">
-            <a data-id="293" href="#" class="text-warm-grey font-body text-[0.82rem] hover:text-cream transition-colors">LinkedIn</a>
-            <a data-id="294" href="#" class="text-warm-grey font-body text-[0.82rem] hover:text-cream transition-colors">Privacy Policy</a>
+        <div class="border-t border-[rgba(255,255,255,0.08)] py-6 flex items-center justify-between flex-wrap gap-4">
+          <p class="text-warm-grey-light font-body text-[0.78rem]">© 2026 Kolvren LLC. All rights reserved</p>
+          <div class="flex gap-4">
+            <a href="https://www.linkedin.com/company/kolvren" class="text-warm-grey font-body text-[0.82rem] hover:text-cream transition-colors">LinkedIn</a>
+            <a href="mailto:ceo@anchorforhotels.com?subject=Privacy%20Policy%20Request" class="text-warm-grey font-body text-[0.82rem] hover:text-cream transition-colors">Privacy Policy</a>
           </div>
         </div>
       </div>
     </footer>
 </main>
-
-<footer data-id="246" class="bg-dark pt-20 pb-0 relative overflow-hidden">
-      <div data-id="247" class="footer-watermark font-display font-[900] text-[8vw] text-[rgba(255,255,255,0.04)] uppercase leading-none text-center select-none pointer-events-none mb-12">Kolvren</div>
-      <div data-id="248" class="max-w-[1180px] mx-auto px-6">
-        <div data-id="249" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          <div data-id="250">
-            <div data-id="251" class="font-display font-[800] text-[1.4rem] mb-4"><span data-id="252" class="text-accent">/</span> <span data-id="253" class="text-cream">Kolvren</span></div>
-            <p data-id="254" class="text-warm-grey font-body text-[0.88rem] leading-relaxed mb-3">Microsoft Copilot adoption partner for mid-market organisations.</p>
-            <p data-id="255" class="text-warm-grey font-body text-[0.88rem]">ceo@anchorforhotels.com</p>
-            <p data-id="256" class="text-warm-grey font-body text-[0.88rem]">+1 (706) 350-3883</p>
-          </div>
-          <div data-id="257">
-            <h5 data-id="258" class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.14em] mb-5">Services</h5>
-            <ul data-id="259" class="space-y-3 list-none">
-              <li data-id="260"><a data-id="261" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Copilot ROI Audit</a></li>
-              <li data-id="262"><a data-id="263" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Workflow Implementation</a></li>
-              <li data-id="264"><a data-id="265" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Enablement &amp; Training</a></li>
-              <li data-id="266"><a data-id="267" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Adoption Analytics</a></li>
-              <li data-id="268"><a data-id="269" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Change Management</a></li>
-              <li data-id="270"><a data-id="271" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="services.html">Governance &amp; Compliance</a></li>
-            </ul>
-          </div>
-          <div data-id="272">
-            <h5 data-id="273" class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.14em] mb-5">Company</h5>
-            <ul data-id="274" class="space-y-3 list-none">
-              <li data-id="275"><a data-id="276" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="about.html">About</a></li>
-              <li data-id="277"><a data-id="278" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="about.html">Our Approach</a></li>
-              <li data-id="279"><a data-id="280" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="contact.html">Contact</a></li>
-              <li data-id="281"><a data-id="282" class="text-warm-grey font-body text-[0.9rem] cursor-pointer hover:text-cream transition-colors" href="contact.html">Book an Audit</a></li>
-            </ul>
-          </div>
-          <div data-id="283">
-            <h5 data-id="284" class="text-warm-grey font-body font-semibold text-[0.72rem] uppercase tracking-[0.14em] mb-5">Certifications</h5>
-            <ul data-id="285" class="space-y-3 list-none">
-              <li data-id="286"><span data-id="287" class="text-warm-grey font-body text-[0.9rem]">Microsoft Solutions Partner</span></li>
-              <li data-id="288"><span data-id="289" class="text-warm-grey font-body text-[0.9rem]">M365 Certified</span></li>
-            </ul>
-          </div>
-        </div>
-        <div data-id="290" class="border-t border-[rgba(255,255,255,0.08)] py-6 flex items-center justify-between flex-wrap gap-4">
-          <p data-id="291" class="text-warm-grey-light font-body text-[0.78rem]">© 2026 Kolvren LLC. All rights reserved. Made by Copilot</p>
-          <div data-id="292" class="flex gap-4">
-            <a data-id="293" href="#" class="text-warm-grey font-body text-[0.82rem] hover:text-cream transition-colors">LinkedIn</a>
-            <a data-id="294" href="#" class="text-warm-grey font-body text-[0.82rem] hover:text-cream transition-colors">Privacy Policy</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-  <script src="assets/js/main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

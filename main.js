@@ -182,11 +182,24 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
     btn.disabled = true;
     btn.textContent = 'Sending…';
 
-    // Simulate async submission — swap for real endpoint (Formspree, EmailJS, etc.)
-    setTimeout(() => {
-      form.style.display = 'none';
-      if (success) success.style.display = 'block';
-    }, 1200);
+    // Formspree handles submission — show success on response
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(res => {
+      if (res.ok) {
+        form.style.display = 'none';
+        if (success) success.style.display = 'block';
+      } else {
+        btn.disabled = false;
+        btn.textContent = 'Try Again';
+        alert('Something went wrong. Please email ceo@anchorforhotels.com directly.');
+      }
+    }).catch(() => {
+      btn.disabled = false;
+      btn.textContent = 'Try Again';
+    });
   });
 })();
 
